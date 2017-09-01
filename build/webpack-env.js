@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var app = require('express')();
-var devConfig = require('./webpack.common.js');
+var devConfig = require('./webpack.dev.js');
 var prodConfig = require('./webpack.prod.js');
 
 var compiler = webpack(devConfig);
