@@ -7,8 +7,8 @@
     "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --hotOnly",
-    "dev": "set NODE_ENV=development&& node server.js",
-    "build": "set NODE_ENV=prodction&& node server.js"
+    "dev": "set NODE_ENV=development&& node build/webpack-env.js",
+    "build": "set NODE_ENV=prodction&& node build/webpack-env.js"
   },
   "author": "",
   "license": "ISC",

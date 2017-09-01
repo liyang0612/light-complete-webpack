@@ -4,20 +4,16 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: ['webpack-hot-middleware/client?reload=true', './src/index.js']
+    app: './src/index.js'
   },
-
   output: {
-    path: path.join(__dirname, '/dist/'),
+    path: path.join(__dirname, '../dist'),
     filename: '[name].bundle.js',
-    sourceMapFilename: '[name].map'
   },
-
   resolve: {
     extensions: ['.ts', '.js', '.json'],
     modules: [path.join(__dirname, 'src'), 'node_modules']
   },
-
   module: {
     rules: [
       {
